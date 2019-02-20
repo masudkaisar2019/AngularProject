@@ -1,0 +1,8 @@
+<div class="outer">
+  <span>Outer</span>
+  <div>{{dataFromOuter}}</div>
+  <!-- <div>Selected: {{eventFromInner}}</div> -->
+
+  <!-- <app-inner *ngFor="let dataFromInner of dataFromOuter" [dataFromInner]="dataFromOuter" (eventFromInner)= eventFromInner($event)></app-inner> -->
+  <app-inner *ngFor="let dataFromInner of dataFromOuter" [dataFromInner]="dataFromInner"></app-inner>
+</div>
