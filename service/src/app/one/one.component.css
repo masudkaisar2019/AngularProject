@@ -1,0 +1,9 @@
+.one{
+  border: 2px solid blue;
+  width: 200px;
+  height: 40px;
+  padding: 5px;
+}
+.one-content{
+ display: inline;
+}

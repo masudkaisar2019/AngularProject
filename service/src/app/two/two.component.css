@@ -1,0 +1,9 @@
+.two{
+  border: 2px solid red;
+  width: 200px;
+  height: 40px;
+  padding: 5px;
+}
+.two-content{
+  display: inline;
+ }
