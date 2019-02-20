@@ -1,0 +1,9 @@
+<div class="outer">
+  <button (click)="countUp()" #up>Up</button>
+    <div class="content"> {{parentCount}}</div>
+  <!-- <button (click)= "countDown()" [style.visibility]="(childData == 0) ? 'hidden' : 'visible' ">down</button> -->
+  <button (click)= "countDown()" #down >down</button>
+
+  <app-inner [count]="parentCount" (changeCount)="changeData($event,up)" >{{Count}}</app-inner>
+</div>
+

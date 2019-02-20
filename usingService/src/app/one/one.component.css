@@ -1,0 +1,10 @@
+.one{
+  border: 2px solid red;
+  padding: 5px;
+  height:50px;
+  width: 100px;
+  /* float: left; */
+}
+.one-content{
+  display: inline;
+}

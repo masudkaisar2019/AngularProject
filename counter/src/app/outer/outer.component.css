@@ -1,0 +1,14 @@
+.outer{
+  height: 150px;
+  width: 200px;
+  border: 2px solid blue;
+  background-color:lightblue;
+  padding: 40px;
+  padding-left: 100px;
+  margin: 40px;
+}
+.counter{
+  display: inline;
+  margin-left: 20px;
+  margin-right: 20px;
+}

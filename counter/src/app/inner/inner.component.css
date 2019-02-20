@@ -1,0 +1,8 @@
+.inner{
+  border: 2px solid brown;
+  height: 50px;
+  width: 100px;
+  background-color: lightyellow;
+  padding-left: 42px;
+  box-sizing: border-box;
+}

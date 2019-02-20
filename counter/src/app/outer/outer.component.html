@@ -1,0 +1,13 @@
+<div class="outer">
+
+  <!-- <button (click)="counUp()" [style.visibility]="(Parentcount == 10) ? 'hidden' : 'visible' ">&#10010;</button> -->
+  <button (click)="counUp()" [style.visibility]="(Parentcount == 10) ? 'hidden' : 'visible' ">&#10010;</button>
+    <!-- <div class="counter">{{Parentcount}}</div> -->
+
+      <div class="counter"></div>
+
+    <button (click)="countDown()" [style.visibility]="(Parentcount == 0) ? 'hidden' : 'visible' ">&#10134;</button>
+
+  <app-inner [count]="Parentcount"></app-inner>
+
+</div>

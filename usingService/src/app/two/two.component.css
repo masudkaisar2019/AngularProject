@@ -1,0 +1,10 @@
+.two{
+  border: 2px solid blue;
+  padding: 5px;
+  height:50px;
+  width: 100px;
+  /* float: left; */
+}
+.two-content{
+  display: inline;
+}
