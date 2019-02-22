@@ -1,0 +1,6 @@
+<div *ngFor='let myData of myData'>
+{{myData}}
+</div>
+<input type="text" #myInputData value="">
+<button (click)="addMyData(myInputData.value)">Add</button>
+<button (click)="removeData()">Delete</button>

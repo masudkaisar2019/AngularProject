@@ -1,0 +1,12 @@
+.surveyQuestion{
+  border: 2px solid green;
+  background-color:lightblue;
+  height: 100px;
+  width: 400px;
+  margin-left: 35px;
+  color: rgb(80, 32, 4);
+}
+.question{
+  padding: 10px;
+  margin-left: 10px;
+}

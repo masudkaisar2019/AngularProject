@@ -1,0 +1,10 @@
+<div class="surveyQuestion">
+  <div class="question">
+    {{surveyQuestion.question}}
+
+      <!-- <app-options [options]="answer" *ngFor= "let answer of  allData.questions.options"></app-options> -->
+
+  </div>
+  <app-options [options]="answer" *ngFor="let answer of surveyQuestion.options"></app-options>
+
+</div>

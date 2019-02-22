@@ -1,0 +1,11 @@
+.mainSurveyContainer{
+  border: 2px solid blue;
+  height: 500px;
+  width: 500px;
+  background-color:lightyellow;
+  padding: 5px;
+  margin: 40px;
+  margin-left: 200px;
+  margin-top: 100px;
+  box-sizing: border-box;
+}

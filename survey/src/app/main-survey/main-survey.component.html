@@ -1,0 +1,6 @@
+<div class="mainSurveyContainer">
+  <h2>{{allData.heading}}</h2>
+  <!-- <app-survey-question [surveyQuestion]="particularQuestion" [qno]="i" *ngFor= " let particularQuestion of allData.questions; let i= index"></app-survey-question> -->
+  <app-survey-question [surveyQuestion]="particularQuestion" *ngFor= " let particularQuestion of allData.questions" ></app-survey-question>
+
+</div>
