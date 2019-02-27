@@ -1,11 +1,7 @@
 <!-- <div class="option" [style.background-color]="changeBackground()"> -->
 <div  class="option">
 
-  {{selected}}
-<!-- <app-circle [circleData]="displayData" *ngFor="let displayData of options.choice"></app-circle> -->
-<!-- <app-circle [circleData]="options" *ngFor="let circleData of options ">hello</app-circle> -->
-<!-- <app-circle [circleData]="data" *ngFor="let data of options "></app-circle> -->
-<!-- <app-circle [circleData]="data" *ngFor ="let data of options"></app-circle> -->
+
 <app-circle (changeData)="takeIndex($event)" [circleData]="data" [inx]="i" [selection]="selected" *ngFor = "let data of options ; let i = index"></app-circle>
-<!-- {{options.choice}} -->
+
 </div>

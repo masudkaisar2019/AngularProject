@@ -94,6 +94,27 @@ export class MainSurveyComponent implements OnInit {
           }
         ]
       },
+      {
+        question: 'How old are you  ?',
+        options: [
+          {
+            choice: 'above 20',
+            color: 'green'
+          },
+          {
+            choice: 'less than 20',
+            color: 'Blue'
+          },
+          {
+            choice: 'above 60',
+            color: 'brown'
+          },
+          {
+            choice: 'above 70',
+            color: 'red'
+          }
+        ]
+      }
     ]};
   constructor() {
     console.log(this.allData.questions[0].options);

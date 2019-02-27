@@ -6,6 +6,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./circle.component.css']
 })
 export class CircleComponent implements OnInit {
+  // changeUpdate: {};
   changeUpdate: {};
   changeStyle: string;
 @Input() inx;
@@ -21,10 +22,15 @@ selected;
   // };
   // }
   makeColor() {
-
-    this.changeData.emit(this.inx);
-    this.inx =  this.circleData.color;
+    this.selection = this.circleData;
     console.log(this.inx);
+
+   this.changeData.emit(this.inx);
+
+    this.changeUpdate = {
+      background: this.circleData.color
+    };
+
   }
 
 

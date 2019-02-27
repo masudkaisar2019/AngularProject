@@ -1,6 +1,6 @@
 .mainSurveyContainer{
   border: 2px solid blue;
-  height: 900px;
+  height: auto;
   width: 600px;
   background-color:lightyellow;
   padding: 5px;

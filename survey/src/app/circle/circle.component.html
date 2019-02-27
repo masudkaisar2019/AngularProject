@@ -1,8 +1,7 @@
 
-<div class="circleData" (click)="makeColor()" [ngStyle]="changeUpdate">
-  {{circleData.choice}}{{i}}
+<div class="circleData" (click)="makeColor()" [ngStyle]="changeUpdate" [style.background-color]="selection==inx ? circleData.color : ''">
+  {{circleData.choice}}
 
-  selected :{{selection}}
 </div>
 <!-- <div class="circleData" (click)="makeColor()" >
   </div> -->
