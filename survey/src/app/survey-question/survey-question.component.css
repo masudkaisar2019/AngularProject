@@ -1,8 +1,8 @@
 .surveyQuestion{
   border: 2px solid green;
   background-color:lightblue;
-  height: 100px;
-  width: 400px;
+  height: 200px;
+  width: 500px;
   margin-left: 35px;
   color: rgb(80, 32, 4);
 }

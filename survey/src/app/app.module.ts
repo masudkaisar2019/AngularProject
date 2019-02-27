@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { MainSurveyComponent } from './main-survey/main-survey.component';
 import { SurveyQuestionComponent } from './survey-question/survey-question.component';
 import { OptionsComponent } from './options/options.component';
+import { CircleComponent } from './circle/circle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainSurveyComponent,
     SurveyQuestionComponent,
-    OptionsComponent
+    OptionsComponent,
+    CircleComponent
   ],
   imports: [
     BrowserModule,

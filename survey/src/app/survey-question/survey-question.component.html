@@ -5,6 +5,7 @@
       <!-- <app-options [options]="answer" *ngFor= "let answer of  allData.questions.options"></app-options> -->
 
   </div>
-  <app-options [options]="answer" *ngFor="let answer of surveyQuestion.options"></app-options>
+  <!-- <app-options [options]="answer" *ngFor="let answer of surveyQuestion.options ;let i = index"></app-options> -->
+  <app-options [options]="surveyQuestion.options"></app-options>
 
 </div>

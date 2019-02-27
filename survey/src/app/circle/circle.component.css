@@ -1,19 +1,16 @@
-/* .option{
+.circleData{
   border: 1px solid yellow;
   border-radius: 50%;
-
+  /* display: inline; */
   padding: 10px;
   margin: 10px;
   height: 50px;
   width: 50px;
   float: left;
-  margin-left: 40px;
+  margin-left: 20px;
   box-sizing: content-box;
   overflow: hidden;
-} */
-.option{
-  border: 2px solid red;
-  height: 100px;
-  width: 420px;
-  margin-left: 20px;
+}
+.changeUpdate{
+  background-color: blue;
 }
