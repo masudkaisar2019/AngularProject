@@ -1,0 +1,8 @@
+.main{
+  border: 2px solid green;
+  height: 540px;
+  width: auto;
+  margin: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+}

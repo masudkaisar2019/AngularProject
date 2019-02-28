@@ -1,0 +1,8 @@
+.userCard{
+  width: 200px;
+  height: auto;
+  border: 2px solid green;
+  margin: 10px;
+  float: left;
+  padding: 5px;
+}
