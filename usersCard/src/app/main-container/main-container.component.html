@@ -1,0 +1,8 @@
+<div class="maincontainer">
+  <h1>{{headline}}</h1>
+<app-usercard [dataFromMain]= "userData" *ngFor="let userData of name"></app-usercard>
+</div>
+<!-- <app-user-details [detailsData]="dataFromMain"></app-user-details> -->
+
+<router-outlet></router-outlet>
+

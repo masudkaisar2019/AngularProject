@@ -1,0 +1,15 @@
+.userCard{
+  border: 2px solid greenyellow;
+  height: 100px;
+  width: 200px;
+  box-sizing: border-box;
+  background-color: lightgray;
+  color:crimson;
+  margin: 20px;
+  float: left;
+}
+.name{
+  font-size: 1.1em;
+  padding: 10px;
+
+}
