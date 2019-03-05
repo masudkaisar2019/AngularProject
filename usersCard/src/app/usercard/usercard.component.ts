@@ -9,8 +9,8 @@ export class UsercardComponent implements OnInit {
   @Input() dataFromMain;
   constructor() { }
   userDetails() {
-    console.log('I am clicked');
-    console.log(this.dataFromMain);
+    // console.log('I am clicked');
+    // console.log(this.dataFromMain);
   }
 
   ngOnInit() {

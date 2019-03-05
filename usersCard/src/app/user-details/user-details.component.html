@@ -1,9 +1,10 @@
-<!-- <p class="name">{{detailsData.id}}</p> -->
-<p>ID : {{id}}</p>
-<!-- <h2>{{data.name}}</h2> -->
 
-<!-- <div class="display" [detailsData]="dataFromMain">
-  <p>{{dataFromMain.name}}</p>
-  <p>{{dataFromMain.id}}</p>
-  <p>{{dataFromMain.email}}</p>
-</div> -->
+
+
+ <div class="display" *ngIf="toDisplay">
+  <p>{{toDisplay.name}}</p>
+  <p>{{toDisplay.id}}</p>
+  <p>{{toDisplay.email}}</p>
+</div>
+<a routerLink="/userDashbord"><button>Back</button></a>
+

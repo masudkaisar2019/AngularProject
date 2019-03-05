@@ -1,3 +1,4 @@
+import { SharedDataService } from './../shared-data.service';
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
@@ -10,15 +11,14 @@ export class MainContainerComponent implements OnInit {
   headline = 'User Dashboad';
   dataStructure: any;
   name ;
-  constructor(private httpClient: HttpClient) {
-    this.dataStructure = this.httpClient.get('https://jsonplaceholder.typicode.com/users').subscribe(
-      (data: any[]) => {
-        this.name = data;
-      }
-    );
+  constructor(private httpClient: HttpClient, private dataShare: SharedDataService) {
+
+
 
   }
   ngOnInit() {
+     this.dataShare.getData().subscribe(data => {this.name = data});
+
   }
 
 }

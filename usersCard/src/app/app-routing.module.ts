@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: 'userDashbord', component: MainContainerComponent },
   { path: 'userCard', component: UsercardComponent },
   { path: 'userDetails/:id', component: UserDetailsComponent },
+  { path: '', redirectTo: '/userDashbord' , pathMatch: 'full'},
   // { path: 'product-details/:id', component: ProductDetails }
   // { path: '/:dataFromMain.id'}, Component : UserDetailsComponent }
 ];
