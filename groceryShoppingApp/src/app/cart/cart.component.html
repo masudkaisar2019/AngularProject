@@ -1,5 +1,7 @@
 <div class="cart">
   <h3>{{title}}</h3>
 
-  <p>{{displayItem}}</p>
+  <ul>
+    <li *ngFor="let item of items">{{cart[item]}} X {{ item }}</li>
+  </ul>
 </div>

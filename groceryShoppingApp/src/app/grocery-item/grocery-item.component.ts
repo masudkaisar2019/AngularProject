@@ -8,16 +8,20 @@ import {GroceryManagerService} from './../grocery-manager.service';
 })
 export class GroceryItemComponent implements OnInit {
   @Input() shoppingItems;
-  count: number = 0;
+  count: number;
 
-  constructor(private groceryService: GroceryManagerService ) { }
+  constructor(private groceryService: GroceryManagerService ) {
+    this.count = 0;
+  }
   countUp() {
     this.count++;
+    this.groceryService.addItem(this.shoppingItems, this.count);
     console.log(this.shoppingItems);
 
   }
   countDown() {
     this.count--;
+    this.groceryService.addItem(this.shoppingItems, this.count);
     console.log(this.shoppingItems);
   }
   // getData() {
