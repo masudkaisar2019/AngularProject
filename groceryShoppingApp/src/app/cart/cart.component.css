@@ -1,0 +1,9 @@
+.cart{
+  border: 2px solid red;
+  height: 200px;
+  width: 500px;
+  /* margin-top: 100px;  */
+  margin-left: 150px;
+  margin-top: 10px;
+  text-align: center;
+}
