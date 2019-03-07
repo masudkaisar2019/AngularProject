@@ -12,14 +12,27 @@ export class CartComponent implements OnInit {
   title = 'Cart';
   items;
   cart;
-  @Input() displayItem: string;
+  total;
+  subTotal;
+  // @Input() displayItem: string;
+  // @Input() itemTotal;
 
-  constructor( private grocerService: GroceryManagerService) { }
+  constructor( private grocerService: GroceryManagerService) {
+    this.total = 0.0;
+  }
+
 
   ngOnInit() {
     this.grocerService.subject.subscribe((cart) => {
       this.cart = cart;
       this.items = Object.keys(cart);
+      // this.total = cart[1];
+      // this.total = this.cart[1];
+      // console.log('I am from cart' + this.total);
+
+      // this.total = cart;
+      // console.log(this.itemTotal);
+      // console.log(this.items);
     });
 
   }

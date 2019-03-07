@@ -7,10 +7,13 @@ import {GroceryManagerService} from './../grocery-manager.service';
   styleUrls: ['./grocery.component.css']
 })
 export class GroceryComponent implements OnInit {
-  itemList: any = ['Apple', 'Orenge', 'Banana', 'Grapes', 'Avocado', 'Peach'];
+  itemList: any = [['Apple', 1.5], ['Orenge', 1.20], ['Banana', .50], ['Grapes', 1.30], ['Avocado', 2.00], ['Peach', 1.5]];
+  // price: any = [2, 3, 4, 5, 6, 2];
 
 
-  constructor(private groceryService: GroceryManagerService ) { }
+  constructor(private groceryService: GroceryManagerService ) {
+    // console.log(this.itemList[0][1]);
+  }
 
   // getData() {
   //   return this.groceryService.get();

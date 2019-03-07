@@ -2,6 +2,8 @@
   <h3>{{title}}</h3>
 
   <ul>
-    <li *ngFor="let item of items">{{cart[item]}} X {{ item }}</li>
-  </ul>
+    <li *ngFor="let item of items">{{cart[item][0]}} X {{ item }} $/each = ${{cart[item][1]}}</li>
+  </ul> <hr>
+  <!-- <button (click)='subTotal()'>Subtotal</button> -->
+  <p>SubTotal : </p>
 </div>

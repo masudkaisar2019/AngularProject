@@ -5,13 +5,19 @@ import { Subject } from 'rxjs';
   providedIn: 'root'
 })
 export class GroceryManagerService {
+  total: any;
   cart = { };
+  price;
   subject = new Subject();
   constructor() { }
 
-  addItem(fruit: string, count: number) {
-    this.cart[fruit] = count;
+  addItem(fruit: string, count: number, total: number) {
+    // this.cart[fruit] = count;
+    // this.price = this.total;
+    this.cart[fruit] = [count, total];
     this.subject.next(this.cart);
+    // console.log('fromService' + this.cart);
+    // console.log(this.total);
   }
 
   // public count = 0;
