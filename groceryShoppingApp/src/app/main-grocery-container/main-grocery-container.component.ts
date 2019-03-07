@@ -6,8 +6,7 @@ import { Component, OnInit} from '@angular/core';
   styleUrls: ['./main-grocery-container.component.css']
 })
 export class MainGroceryContainerComponent implements OnInit {
-  title: string = 'Grocery Shopping List';
-  // shoppingList: any = ['Apple', 'Orenge', 'Banana', 'Grapes', 'Avocado', 'Peach'];
+  title = 'Grocery Shopping List';
   constructor() { }
 
   ngOnInit() {

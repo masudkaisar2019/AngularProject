@@ -14,8 +14,7 @@ export class CartComponent implements OnInit {
   cart;
   total;
   subTotal;
-  // @Input() displayItem: string;
-  // @Input() itemTotal;
+
 
   constructor( private grocerService: GroceryManagerService) {
     this.total = 0.0;
@@ -26,15 +25,8 @@ export class CartComponent implements OnInit {
     this.grocerService.subject.subscribe((cart) => {
       this.cart = cart;
       this.items = Object.keys(cart);
-      // this.total = cart[1];
-      // this.total = this.cart[1];
-      // console.log('I am from cart' + this.total);
-
-      // this.total = cart;
-      // console.log(this.itemTotal);
-      // console.log(this.items);
+      this.subTotal = cart['sum'];
     });
-
   }
 
 }

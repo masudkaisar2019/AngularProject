@@ -10,42 +10,26 @@ export class GroceryItemComponent implements OnInit {
   @Input() shoppingItems;
   count: number;
   total;
+  subTotal;
+  netTotal;
+  finalTolal;
 
   constructor(private groceryService: GroceryManagerService ) {
     this.count = 0;
-    // console.log(this.shoppingItems[0][1]);
   }
   countUp() {
     this.count++;
     this.total = this.count * this.shoppingItems[1];
-    this.groceryService.addItem(this.shoppingItems, this.count, this.total);
-    // console.log(this.shoppingItems);
-    // console.log(this.count);
-    // console.log(this.shoppingItems[1]);
-    // this.total = this.count * this.shoppingItems[1];
-    // console.log(this.shoppingItems[0] + ' is ' + this.total);
-
-
+    this.subTotal = this.shoppingItems[1];
+    this.groceryService.addItem(this.shoppingItems, this.count, this.total, this.subTotal);
   }
+
   countDown() {
     this.count--;
     this.total = this.count * this.shoppingItems[1];
-    this.groceryService.addItem(this.shoppingItems, this.count, this.total);
-    // this.total = this.count * this.shoppingItems[1];
-    console.log(this.shoppingItems[0] + ' is ' + this.total);
-    // console.log(this.shoppingItems);
-    // console.log(this.count);
+    this.subTotal = this.shoppingItems[1];
+    this.groceryService.removeItem(this.shoppingItems, this.count, this.total, this.subTotal);
   }
-  // getData() {
-  //   return this.groceryService.get();
-  //  }
-  //   up1() {
-  // this.groceryService.countUp();
-  // }
-  // down1() {
-  //  this.groceryService.countDown();
-
-  // }
 
   ngOnInit() {
   }

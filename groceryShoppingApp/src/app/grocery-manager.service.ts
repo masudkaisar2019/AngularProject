@@ -7,28 +7,36 @@ import { Subject } from 'rxjs';
 export class GroceryManagerService {
   total: any;
   cart = { };
-  price;
   subject = new Subject();
+  subTotal = [];
+  netTotal;
+  finalTotal = 0;
   constructor() { }
 
-  addItem(fruit: string, count: number, total: number) {
-    // this.cart[fruit] = count;
-    // this.price = this.total;
-    this.cart[fruit] = [count, total];
+  addItem(fruit: string, count: number, total: number, subTotal) {
+    this.cart[fruit] = [count, total, subTotal];
+    this.subTotal.push(this.cart[fruit][2]);
+    this.netTotal = (a, b ) => {
+      return a + b;
+    };
+    this.finalTotal = this.subTotal.reduce(this.netTotal);
+
+    this.cart['sum'] = this.finalTotal;
+
+
     this.subject.next(this.cart);
-    // console.log('fromService' + this.cart);
-    // console.log(this.total);
   }
+  removeItem(fruit: string, count: number, total: number, subTotal) {
+    this.cart[fruit] = [count, total, subTotal];
+    this.subTotal.pop(this.cart[fruit][2]);
+    this.netTotal = (a, b ) => {
+      return a + b;
+    };
+    this.finalTotal = this.subTotal.reduce(this.netTotal);
 
-  // public count = 0;
-  // get() {
-  //   return this.count;
-  // }
+    this.cart['sum'] = this.finalTotal;
 
-  // countUp() {
-  //   this.count++;
-  // }
-  // countDown() {
-  //   this.count--;
-  // }
+
+    this.subject.next(this.cart);
+  }
 }
