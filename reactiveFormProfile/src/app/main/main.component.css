@@ -1,0 +1,28 @@
+.mainContainer{
+  border: 2px solid green;
+  /* margin: 20px; */
+  padding: 20px;
+  height: 400px;
+  width: 700px;
+  margin-left: 300px;
+  margin-top: 100px;
+  background-color:white;
+}
+h1{
+  color: blue;
+  padding-left: 40px;
+}
+.btn-delete{
+  float: right;
+  background-color:brown;
+  color: white;
+  /* height: 40px;
+  width: 100px; */
+}
+.btn-newProfile{
+  margin-left: 300px;
+  background-color: blue;
+  color: white;
+  height: 40px;
+  width: 100px;
+}

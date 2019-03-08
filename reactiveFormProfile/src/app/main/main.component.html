@@ -1,0 +1,10 @@
+
+<div class="mainContainer">
+  <h1>{{title}}</h1>
+  <ul>
+    <li *ngFor= 'let profile of profiles '>{{profile.firstName}},{{profile.lastName}} <button class="btn-delete">DELETE</button><hr></li>
+  </ul>
+  <a routerLink="/addContact"><button class="btn-newProfile"> NEW PROFILE</button></a>
+
+
+</div>

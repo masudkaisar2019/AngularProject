@@ -1,0 +1,32 @@
+
+<div class="addContainer">
+    <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+
+        <label>
+          First Name:
+          <input type="text" formControlName="firstName" style="border:none">
+        </label>
+
+        <label>
+          Last Name:
+          <input type="text" formControlName="lastName">
+        </label> <hr> <br><br>
+        <label>
+            Email:
+            <input type="text" formControlName="email">
+        </label> <hr> <br><br>
+        <label>
+            PhoneNumber:
+            <input type="number" formControlName="phoneNumber">
+        </label> <hr> <br><br>
+        <label>
+            Address:
+            <input type="text" formControlName="address">
+        </label> <hr>
+
+      </form> <br><br>
+
+      <button (click)='createProfile()'>CREATE</button>
+      <a routerLink="/home"><button>HOME</button></a>
+
+</div>
