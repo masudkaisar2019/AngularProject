@@ -7,12 +7,14 @@ import { MainComponent } from './main/main.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AddContactComponent } from './add-contact/add-contact.component';
 import {DataService} from './data.service';
+import { EditContactDetailsComponent } from './edit-contact-details/edit-contact-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    AddContactComponent
+    AddContactComponent,
+    EditContactDetailsComponent
   ],
   imports: [
     BrowserModule,
