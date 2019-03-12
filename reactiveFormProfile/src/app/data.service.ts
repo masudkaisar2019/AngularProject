@@ -13,7 +13,7 @@ export class DataService {
       lastName: 'Smith',
       email: 'james@gmail.com',
       phoneNumber: 7852489999,
-      addres: 'Los Angeles',
+      address: 'Los Angeles',
       id: 1
     },
     {
@@ -21,7 +21,7 @@ export class DataService {
       lastName: 'Johnson',
       email: 'kaite@gmail.com',
       phoneNumber: 7852489999,
-      addres: 'Miami FL',
+      address: 'Miami FL',
       id: 2
     },
     {
@@ -29,7 +29,7 @@ export class DataService {
       lastName: 'Khan',
       email: 'masud@gmail.com',
       phoneNumber: 7852489999,
-      addres: 'Los Angeles',
+      address: 'Los Angeles',
       id: 3
     }
   ];

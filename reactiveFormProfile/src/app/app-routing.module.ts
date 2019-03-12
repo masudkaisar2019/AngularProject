@@ -8,7 +8,7 @@ const routes: Routes = [
   { path: 'home', component: MainComponent},
   { path: '', redirectTo: '/home' , pathMatch: 'full'},
   { path: 'addContact', component: AddContactComponent },
-  // { path: 'editContactDetails', component: EditContactDetailsComponent  },
+  { path: 'editContactDetails', component: EditContactDetailsComponent  },
   { path: 'editContactDetails/:id', component: EditContactDetailsComponent },
 ];
 

@@ -16,13 +16,14 @@ export class MainComponent implements OnInit {
 
   ngOnInit() {
     this.getProfile = this.dataService.profiles;
+    // console.log(this.getProfile);
   }
 
   removeProfile() {
     this.getProfile.pop();
   }
   showProfile() {
-    console.log('i am showing your profile');
+    // console.log('i am showing your profile');
   }
 
 }

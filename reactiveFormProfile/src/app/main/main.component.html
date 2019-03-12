@@ -2,9 +2,32 @@
 <div class="mainContainer">
   <h1>{{title}}</h1>
   <ul>
-      <a routerLink="/editContactDetails">
-        <li *ngFor= 'let profile of getProfile' (click)='showProfile()'>{{profile.firstName}},{{profile.lastName}} <button class="btn-delete" (click)='removeProfile()'>DELETE</button><hr></li>
-      </a>
+
+
+
+        <li *ngFor= 'let profile of getProfile' (click)='showProfile()'>
+
+
+
+            <a routerLink="/editContactDetails/{{profile.id}}">
+
+
+
+              {{profile.firstName}},{{profile.lastName}}
+
+
+            </a>
+
+          <button class="btn-delete" (click)='removeProfile()'>
+
+            DELETE
+
+          </button>
+           <hr>
+
+
+        </li>
+
   </ul>
   <a routerLink="/addContact"><button class="btn-newProfile"> NEW PROFILE</button></a>
 
