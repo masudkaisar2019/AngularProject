@@ -1,0 +1,17 @@
+<div class="navBar">
+
+
+            <input type="text" [formControl]="name" style="border:none; height:40px; width: 300px; padding: 10px; margin:10px; box-sizing: border-box" placeholder="Stock Tracker" value="" #reference>
+
+      <button (click)='addStock()' (click)="reference.value=''">AddStock</button>
+
+
+
+
+    <a routerLink="/manage">
+
+      <button>Manage Stock</button>
+
+    </a>
+
+</div>
