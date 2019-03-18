@@ -1,0 +1,13 @@
+<!-- <p>
+  board works!
+</p> -->
+
+<div class="row" *ngFor = 'let row of [0,1,2]'>
+  <app-squre *ngFor='let col of [0,1,2]' [state]='squares[col+row*3]' (click)='getTheValue(col+row*3)'></app-squre>
+  <!-- <app-squre *ngFor='let col of [0,1,2]' [state]='col+row*3' ></app-squre> -->
+
+</div>
+<div class="displayPlayer">
+    {{status}}
+</div>
+<button (click)='newGame()'>New Game</button>

@@ -1,0 +1,10 @@
+.row{
+  height: 45px;
+  width: 45px;
+  /* border: 2px solid blue; */
+  float: left;
+}
+
+.displayPlayer{
+  margin-top: 160px;
+}

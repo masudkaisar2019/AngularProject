@@ -1,0 +1,9 @@
+.col{
+  height: 45px;
+  width: 45px;
+  border: 2px solid brown;
+  float: left;
+  font-size: 15px;
+  text-align: center;
+}
+
