@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class BoardComponent implements OnInit {
 
   squares = Array(9).fill(null);
-  player = 'X';
+  player = 'O';
   winner = null;
 
   constructor() { }
@@ -34,7 +34,7 @@ export class BoardComponent implements OnInit {
 
       }
 
-      this.player = this.player === 'X' ? 'O' : 'X';
+      this.player = this.player === 'O' ? 'X' : 'O';
 
     }
   }
@@ -67,7 +67,7 @@ export class BoardComponent implements OnInit {
 
   newGame() {
     this.squares = Array(9).fill(null);
-    this.player = 'X';
+    this.player = 'O';
     this.winner = null;
   }
 

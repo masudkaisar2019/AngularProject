@@ -1,0 +1,12 @@
+.guitarItem{
+  /* border: 2px solid brown; */
+  width: 150px;
+  height: 280px;
+  margin: 10px 10px 10px 70px;
+  float: left;
+}
+img{
+  width: 140px;
+  height: 180px;
+
+}

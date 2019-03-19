@@ -1,0 +1,27 @@
+<div class="guitarContainer">
+
+  <ul>
+
+    <li>
+      <label class="container">Electric
+        <input type="checkbox" >
+      </label>
+    </li>
+
+    <li>
+        <label class="container">Acoustic
+          <input type="checkbox" >
+        </label>
+    </li>
+
+  </ul>
+
+
+
+    <app-guitar-item [guitarItem]='item' *ngFor= 'let item of guitarData'></app-guitar-item>
+
+</div>
+
+
+
+
