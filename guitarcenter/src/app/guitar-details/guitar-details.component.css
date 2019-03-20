@@ -1,6 +1,22 @@
 .guitarDetails{
-  height: 600px;
+  height: 415px;
   width: 1000px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   margin: 40px;
+}
+.guitarDetailsImage{
+  float: left;
+  /* border: 2px solid blue; */
+  height: 300px;
+  width: 250px;
+  margin: 40px;
+
+}
+.guitarDiscription{
+  float: left;
+  /* border: 2px solid green; */
+  height: 500px;
+  width: 400px;
+  margin: 40px;
+
 }

@@ -1,13 +1,14 @@
-<div class="guitarItem">
 
-    <img src={{guitarItem.image}} alt="image">
-  <!-- {{guitarItem.name}} -->
-  <p>Price: ${{guitarItem.price}}</p>
+<a routerLink="/guitarDetails/{{guitarItem.id}}">
 
-  <a routerLink="/guitarDetails/{{guitarItem.id}}">
-    <button (click)='viewGuitar()'>View Guiter</button>
-  </a>
+  <div class="guitarItem">
+
+      <img src={{guitarItem.image}} alt="image">
+
+    <p>{{guitarItem.name}}</p>
+    <p>Price: ${{guitarItem.price}}</p>
 
 
+  </div>
 
-</div>
+</a>

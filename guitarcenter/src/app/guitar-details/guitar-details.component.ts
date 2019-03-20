@@ -1,5 +1,5 @@
 import { ManagerService } from './../manager.service';
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -7,25 +7,36 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './guitar-details.component.html',
   styleUrls: ['./guitar-details.component.css']
 })
-export class GuitarDetailsComponent implements OnInit {
+export class GuitarDetailsComponent implements OnInit, OnDestroy {
   @Input() guiterDetail;
   id: number;
   private sub: any;
   alldata;
-  toDisplay;
 
   constructor(private guitarData: ManagerService, private route: ActivatedRoute) { }
 
   ngOnInit() {
-   this.alldata = this.guitarData.guiter;
+    console.log(this.guiterDetail);
 
 
     this.sub = this.route.params.subscribe(params => {
+      this.alldata = this.guitarData.getGuiterDetails(+params['id']);
           this.id = +params['id'];
           console.log(this.id);
-
+          console.log(this.alldata);
        });
+  }
 
+  getData() {
+    return this.guitarData.get();
+   }
+
+
+  up() {
+    this.guitarData.countUp();
+  }
+  down() {
+    this.guitarData.countDown();
   }
 
   ngOnDestroy() {
@@ -36,19 +47,6 @@ export class GuitarDetailsComponent implements OnInit {
 
 
 
-// @Input() detailsData;
-// id: number;
-// private sub: any;
-// alldata;
-// constructor(private route: ActivatedRoute, private dataShare: SharedDataService) {}
-// toDisplay;
-// ngOnInit() {
-//  this.dataShare.getData().subscribe(data => {
-//    this.alldata = data;
-//    this.toDisplay = this.alldata.filter(obj => obj.id === this.id)[0];
 
-//    // console.log(this.toDisplay);
-//  });
 
-// }
 

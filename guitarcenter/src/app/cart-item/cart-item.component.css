@@ -1,0 +1,67 @@
+.cartItem{
+  height: 200px;
+  width: 1000px;
+  /* margin: 20px; */
+  border: 2px solid brown;
+}
+
+.cartImage{
+  float: left;
+  /* border: 2px solid red; */
+  margin: 15px 15px 15px 25px;
+  height: 180px;
+  width: 200px;
+
+}
+.cartDiscription{
+  float: left;
+  /* border: 2px solid blue; */
+  margin: 15px 15px 15px 25px;
+  height: 180px;
+  width: 200px;
+}
+.cartPrice{
+  float: left;
+  /* border: 2px solid green; */
+  margin: 15px 15px 15px 25px;
+  height: 180px;
+  width: 100px;
+}
+.x{
+  float: left;
+  /* border: 2px solid blue; */
+  margin: 15px 15px 15px 25px;
+  height: 180px;
+  width: 50px;
+}
+
+.cartQuantity{
+  float: left;
+  /* border: 2px solid yellow; */
+  margin: 15px 15px 15px 25px;
+  height: 180px;
+  width: 50px;
+}
+
+.cartTotal{
+  float: left;
+  /* border: 2px solid brown; */
+  margin: 15px 15px 15px 25px;
+  height: 180px;
+  width: 100px;
+}
+
+.orderButton{
+  float: right;
+  height: 50px;
+  width: 150px;
+  background-color: brown;
+  color:wheat;
+}
+.btnOrder{
+  height: 50px;
+  width: 150px;
+  background-color: brown;
+  color:wheat;
+  font-size: 20px;
+}

@@ -1,8 +1,28 @@
 
 <div class="guitarDetails">
+  <p>ItemNumber: {{alldata.itemNum}}</p>
 
-<!-- <p>{{allData.name}}</p> -->
+<!-- <p>{{alldata.name}}</p> -->
 
+<div class="guitarDetailsImage">
+    <img src={{alldata.image}} alt="image">
+
+</div>
+<div class="guitarDiscription">
+  <h2>Product Details:</h2>
+  <h4> <b>Name:</b> {{alldata.name}}</h4>
+  <p><b>Discription:</b> {{alldata.description}}</p>
+  <p><b>Type:</b> {{alldata.type}}</p>
+  <h2>Price: ${{alldata.price}} </h2>
+
+  <button (click)='up()'> <b>+</b> </button> {{getData()}} <button (click)='down()'><b>-</b></button> <br><br>
+
+
+  <a routerLink="/cart">
+    <button>Add to Cart</button>
+  </a>
+
+</div>
 
   </div>
 

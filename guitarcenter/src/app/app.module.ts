@@ -11,6 +11,10 @@ import { HomeDisplayComponent } from './home-display/home-display.component';
 import { GuitarComponent } from './guitar/guitar.component';
 import { GuitarItemComponent } from './guitar-item/guitar-item.component';
 import { GuitarDetailsComponent } from './guitar-details/guitar-details.component';
+import { CartComponent } from './cart/cart.component';
+import { CartItemComponent } from './cart-item/cart-item.component';
+import { ThankYouComponent } from './thank-you/thank-you.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +25,11 @@ import { GuitarDetailsComponent } from './guitar-details/guitar-details.componen
     HomeDisplayComponent,
     GuitarComponent,
     GuitarItemComponent,
-    GuitarDetailsComponent
+    GuitarDetailsComponent,
+    CartComponent,
+    CartItemComponent,
+    ThankYouComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

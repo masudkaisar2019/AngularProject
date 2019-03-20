@@ -1,9 +1,12 @@
 import { Injectable } from '@angular/core';
+// import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ManagerService {
+  // subject: Subject<any>;
+  public count: number = 0 ;
 
   guiter = [
     {
@@ -115,4 +118,36 @@ export class ManagerService {
 ];
 
   constructor() { }
+
+  filteredArray(filterValue: string) {
+    this.guiter.filter(() => {
+
+    });
+  }
+
+  getGuiterDetails(id: number) {
+    return this.guiter.find((item) => {
+        return item.id === id;
+    });
+  }
+
+
+  // getProfile() {
+  //   this.subject.next(this.guiter);
+  // }
+  get() {
+    return this.count;
+  }
+
+  countUp() {
+    this.count++;
+  }
+  countDown() {
+    this.count--;
+  }
+
+
+
+
+
 }

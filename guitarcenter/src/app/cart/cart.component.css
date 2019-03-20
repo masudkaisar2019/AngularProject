@@ -1,0 +1,36 @@
+.cart{
+  height: 415px;
+  width: 1000px;
+  margin: 40px;
+  /* border: 2px solid brown; */
+
+}
+span{
+  font-size: 20px;
+}
+.cartHeadline{
+  height: 40px;
+  width: 900px;
+  margin: 40px;
+  /* border: 2px solid brown; */
+}
+.item{
+  float: left;
+  margin: 20px;
+  width: 450px;
+}
+.price{
+  float: left;
+  margin: 20px;
+  width: 100px;
+}
+.quantity{
+  float: left;
+  margin: 20px;
+  width: 100px;
+}
+.total{
+  float: left;
+  margin: 20px;
+  width: 80px;
+}
