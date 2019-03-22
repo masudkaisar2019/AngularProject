@@ -16,7 +16,7 @@ export class GuitarItemComponent implements OnInit {
 
 
   viewGuitar() {
-    console.log('I am clicked');
+    // console.log('I am clicked');
   }
 
 }

@@ -6,7 +6,9 @@ import { Injectable } from '@angular/core';
 })
 export class ManagerService {
   // subject: Subject<any>;
-  public count: number = 0 ;
+  public count = 0 ;
+
+  // cartArray = [];
 
   guiter = [
     {
@@ -120,8 +122,12 @@ export class ManagerService {
   constructor() { }
 
   filteredArray(filterValue: string) {
-    this.guiter.filter(() => {
-
+    this.guiter.filter((obj) => {
+      for ( const key in obj) {
+        if (obj[key].includes('acoustic')) {
+          return obj;
+        }
+      }
     });
   }
 
@@ -145,6 +151,12 @@ export class ManagerService {
   countDown() {
     this.count--;
   }
+
+
+  // addItem(itemArray) {
+  //   this.cartArray.push(...itemArray);
+  //   // console.log('cartarray', this.cartArray);
+  // }
 
 
 

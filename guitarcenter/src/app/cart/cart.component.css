@@ -1,9 +1,23 @@
 .cart{
-  height: 415px;
+  height: auto;
   width: 1000px;
   margin: 40px;
   /* border: 2px solid brown; */
 
+}
+.orderButton{
+  float: right;
+  height: 50px;
+  width: 150px;
+  background-color: brown;
+  color:wheat;
+}
+.btnOrder{
+  height: 50px;
+  width: 150px;
+  background-color: brown;
+  color:wheat;
+  font-size: 20px;
 }
 span{
   font-size: 20px;

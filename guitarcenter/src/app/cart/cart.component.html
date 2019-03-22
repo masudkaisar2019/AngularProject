@@ -13,6 +13,12 @@
      <div class="total"><b>Total</b></div>
    </div>
    <hr>
-   <app-cart-item></app-cart-item>
+   <app-cart-item [shoppingCart]='item' *ngFor= 'let item of guitarKeys'   [name]='name' [image]='image' [price]= 'price'></app-cart-item>
+
+   <a routerLink="/thankyou">
+    <div class="orderButton">
+        <button class="btnOrder">Order Now</button>
+      </div>
+  </a>
 
 </div>

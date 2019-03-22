@@ -1,35 +1,35 @@
-<!-- <p>
-  cart-item works!
-</p> -->
+
 <div class="cartItem">
 
   <div class="cartImage">
-    cartImage
+    <img src={{image}} alt="">
 
   </div>
 
   <div class="cartDiscription">
-    cartDiscription
+    <p>{{name}}</p>
+    <!-- <p>#Item: {{shoppingCart.itemNum}}</p> -->
 
   </div>
 
   <div class="cartPrice">
-    cartPrice
+    ${{price}}
 
   </div>
 
   <div class="x">
-    cart X
+    <b>X</b>
 
   </div>
 
   <div class="cartQuantity">
-    Cart Quantity
+    <!-- Cart Quantity -->
+    {{quantity}}
 
   </div>
 
   <div class="cartTotal">
-    cart Total
+    {{total}}
 
   </div>
 
@@ -37,9 +37,9 @@
 
 
 
-<a routerLink="/thankyou">
+<!-- <a routerLink="/thankyou">
   <div class="orderButton">
       <button class="btnOrder">Order Now</button>
     </div>
-</a>
+</a> -->
 

@@ -1,5 +1,5 @@
 .cartItem{
-  height: 200px;
+  height: 250px;
   width: 1000px;
   /* margin: 20px; */
   border: 2px solid brown;
@@ -51,17 +51,5 @@
   width: 100px;
 }
 
-.orderButton{
-  float: right;
-  height: 50px;
-  width: 150px;
-  background-color: brown;
-  color:wheat;
-}
-.btnOrder{
-  height: 50px;
-  width: 150px;
-  background-color: brown;
-  color:wheat;
-  font-size: 20px;
-}
+
+
