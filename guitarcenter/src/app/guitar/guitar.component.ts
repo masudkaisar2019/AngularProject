@@ -1,6 +1,7 @@
 import { ManagerService } from './../manager.service';
 import { Component, OnInit } from '@angular/core';
 import { componentNeedsResolution } from '@angular/core/src/metadata/resource_loading';
+import { FormControl, FormGroup } from '@angular/forms';
 
 
 @Component({
@@ -10,12 +11,16 @@ import { componentNeedsResolution } from '@angular/core/src/metadata/resource_lo
 })
 export class GuitarComponent implements OnInit {
   guitarData;
+  filterForm: FormGroup;
 
   constructor( private managerService: ManagerService) { }
 
   ngOnInit() {
     this.guitarData = this.managerService.guiter;
-    // console.log(this.guitarData );
+    this.filterForm = new FormGroup({
+      'electric': new FormControl(null),
+      'acoustic': new FormControl(null)
+    });
   }
 
 }

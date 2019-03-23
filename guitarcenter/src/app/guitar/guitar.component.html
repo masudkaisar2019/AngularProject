@@ -1,20 +1,23 @@
 <div class="guitarContainer">
 
-  <ul>
 
-    <li>
-      <label class="container">Electric
-        <input type="checkbox" >
-      </label>
-    </li>
+  <form action="" [formGroup]="filterForm">
+      <ul>
+          <li>
+            <label class="container">Electric
+              <input type="checkbox" formControlName= 'electric'>
+            </label>
+          </li>
 
-    <li>
-        <label class="container">Acoustic
-          <input type="checkbox" >
-        </label>
-    </li>
+          <li>
+              <label class="container">Acoustic
+                <input type="checkbox" formControlName= 'acoustic' >
+              </label>
+          </li>
 
-  </ul>
+        </ul>
+  </form>
+
 
 
 

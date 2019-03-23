@@ -15,6 +15,7 @@ import { CartComponent } from './cart/cart.component';
 import { CartItemComponent } from './cart-item/cart-item.component';
 import { ThankYouComponent } from './thank-you/thank-you.component';
 import { FooterComponent } from './footer/footer.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,11 +30,13 @@ import { FooterComponent } from './footer/footer.component';
     CartComponent,
     CartItemComponent,
     ThankYouComponent,
-    FooterComponent
+    FooterComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [ManagerService],
   bootstrap: [AppComponent]

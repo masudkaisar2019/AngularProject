@@ -16,9 +16,11 @@ export class CartService {
     if (this.cart[id]) {
       // if we already have some quantity for that particular guitar
       this.cart[id] = this.cart[id] + quantity;
+      console.log(this.cart[id]);
     } else {
       // if we don't has it at all
       this.cart[id] = quantity;
+      console.log(this.cart[id]);
 
     }
   }

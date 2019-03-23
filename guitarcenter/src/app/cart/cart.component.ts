@@ -31,28 +31,29 @@ export class CartComponent implements OnInit {
     //     return value.guitar.id = this.dataObject;
     // });
 
+
+
     for (let num = 0; num < this.guitarKeys.length; num++) {
       this.dataToRender.push(this.guitars.filter((value) => {
       //  console.log(value);
             return value.id == this.guitarKeys[num];
         })[0]);
     }
-    console.log(this.dataToRender);
+    console.log('data', this.dataToRender);
 
-    for ( let i = 0; i < this.dataToRender.length; i++) {
-      this.name = this.dataToRender[i].name;
-      this.price = this.dataToRender[i].price;
-      this.itemNum = this.dataToRender[i].itemNum;
-      this.image = this.dataToRender[i].image;
+    // for ( let i = 0; i < this.dataToRender.length; i++) {
+    //   this.name = this.dataToRender[i].name;
+    //   this.price = this.dataToRender[i].price;
+    //   this.itemNum = this.dataToRender[i].itemNum;
+    //   this.image = this.dataToRender[i].image;
+    //   break;
+    // }
 
-
-    }
-
-    // console.log('-----------------');
-    // console.log(this.guitarKeys);
-    // console.log(this.dataObject);
-    // // console.log(this.guitars);
-    // console.log('-----------------');
+    console.log('-----------------');
+    console.log(this.guitarKeys);
+    console.log(this.dataObject);
+    console.log(this.guitars);
+    console.log('-----------------');
   }
 
 }

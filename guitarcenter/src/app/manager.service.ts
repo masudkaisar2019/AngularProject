@@ -124,7 +124,7 @@ export class ManagerService {
   filteredArray(filterValue: string) {
     this.guiter.filter((obj) => {
       for ( const key in obj) {
-        if (obj[key].includes('acoustic')) {
+        if (obj[key].includes(filterValue)) {
           return obj;
         }
       }

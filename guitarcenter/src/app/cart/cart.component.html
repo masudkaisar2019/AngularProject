@@ -13,7 +13,7 @@
      <div class="total"><b>Total</b></div>
    </div>
    <hr>
-   <app-cart-item [shoppingCart]='item' *ngFor= 'let item of guitarKeys'   [name]='name' [image]='image' [price]= 'price'></app-cart-item>
+   <app-cart-item [shoppingCart]='item' *ngFor= 'let item of dataToRender' [quantity]= 'dataObject[item.id]'></app-cart-item>
 
    <a routerLink="/thankyou">
     <div class="orderButton">
