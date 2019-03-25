@@ -48,3 +48,13 @@ span{
   margin: 20px;
   width: 80px;
 }
+
+.subTotal{
+  float: left;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+}

@@ -11,22 +11,15 @@ import { Component, OnInit, Input } from '@angular/core';
 export class CartItemComponent implements OnInit {
   @Input() shoppingCart;
   @Input() quantity;
-  total;
-  id;
+  totalPrice;
 
-  constructor( private managerData: ManagerService, private cartService: CartService) {
+  constructor(private cartService: CartService ) {
 
   }
 
   ngOnInit() {
-    // this.quantity = this.managerData.get();
-    // this.total = this.shoppingCart.price * this.quantity;
-    // this.quantity = this.cartService.addToCart(this.id, this.quantity);
-    // this.quantity = this.cartService.quantityOfItem;
-    // this.total = this.cartService.total;
-    // console.log( this.quantity);
-    this.total = this.quantity * this.shoppingCart.price;
-    console.log(this.price );
+
+    this.totalPrice = this.cartService.total;
   }
 
 }

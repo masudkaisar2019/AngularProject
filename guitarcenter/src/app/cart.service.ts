@@ -5,23 +5,51 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class CartService {
-  data;
+  total;
+  subtotal = [];
+  netTotal;
+  totalCart = [];
+  displayCart;
 
   cart = {};
 
   constructor() { }
-  addToCart(id, quantity) {
-    // console.log(id, quantity, alldata.price);
+
+  addToCart(id, quantity, data) {
 
     if (this.cart[id]) {
-      // if we already have some quantity for that particular guitar
       this.cart[id] = this.cart[id] + quantity;
-      console.log(this.cart[id]);
+      this.totalCart.push(quantity);
+      console.log(this.totalCart);
+      this.displayCart = this.totalCart.reduce( (x, y) => {
+        return x + y;
+      });
+      console.log(this.displayCart);
+      this.total =  quantity * data.price;
+      console.log('total', this.total);
+      this.subtotal.push( this.total);
+      this.netTotal = this.subtotal.reduce((a, b) => {
+        return a + b;
+      });
+
     } else {
-      // if we don't has it at all
       this.cart[id] = quantity;
-      console.log(this.cart[id]);
+      this.totalCart.push(quantity);
+      console.log(this.totalCart);
+      this.displayCart = this.totalCart.reduce( (x, y) => {
+        return x + y;
+      });
+      console.log(this.displayCart);
+      this.total =  quantity * data.price;
+      console.log('total', this.total);
+
+      this.subtotal.push( this.total);
+      this.netTotal = this.subtotal.reduce((a, b) => {
+        return a + b;
+      });
 
     }
   }
+
+
 }

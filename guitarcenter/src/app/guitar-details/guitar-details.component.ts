@@ -51,7 +51,8 @@ export class GuitarDetailsComponent implements OnInit, OnDestroy {
     // // console.log(this.itemArr);
     // console.log(this.id);
     // console.log(this.itemArr.length);
-    this.cartService.addToCart(this.id, this.itemArr.length);
+    this.cartService.addToCart(this.id, this.itemArr.length, this.alldata);
+    // console.log('data', this.alldata);
   }
 
 }
