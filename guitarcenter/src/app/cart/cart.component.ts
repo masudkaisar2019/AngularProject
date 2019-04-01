@@ -31,7 +31,8 @@ export class CartComponent implements OnInit {
   }
 
   clearCart() {
-    console.log('clicked');
+    // this.cartItem.clearCart();
+    this.dataToRender = [];
   }
 
 }
